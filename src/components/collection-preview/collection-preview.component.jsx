@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CollectionItem from '../collection-item/collection-item.component';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './collection-preview.styles.scss';
 

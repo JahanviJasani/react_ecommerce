@@ -10,6 +10,7 @@
     .collection_title {
       font-size: 2rem;
       margin: 0;
+      letter-spacing: 0.5px;
     }
   }
   .item_preview {
@@ -21,9 +22,7 @@
     .item_description {
       .item_brand {
         font-size: 1.125rem;
-        font-weight: 600;
         margin-bottom: 4px;
-        letter-spacing: 1px;
       }
       .item_name {
         font-size: 0.9375rem;
