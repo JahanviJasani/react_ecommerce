@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Category from '../category/category.component';
 
 import './directory.styles.scss';
@@ -9,14 +10,14 @@ class Directory extends React.Component {
 
     this.state = {
       wsections: [{
-        title: "Spring",
+        title: "Dress",
         subtitle: "Collection",
         imageUrl: "https://images2.imgbox.com/8d/06/lO0ewEKh_o.jpg",
         pos: "left",
         id: "1"
       },
       {
-        title: "Formal",
+        title: "Blazer",
         subtitle: "Collection",
         imageUrl: "https://images2.imgbox.com/79/fe/UI6K3eGS_o.jpg",
         pos: "left",

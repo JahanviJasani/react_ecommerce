@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './category.styles.scss';
 
 const Category = ({ title, subtitle, imageUrl, position, id }) => {
@@ -11,7 +12,7 @@ const Category = ({ title, subtitle, imageUrl, position, id }) => {
           <br />
           {subtitle}
         </h2>
-        <a href="" className="theme_btn">Shop Now</a>
+        <a href="" className="btn_theme">Shop Now</a>
       </div>
     </div>
   )

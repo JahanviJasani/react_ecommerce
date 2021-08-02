@@ -1,15 +1,17 @@
 import React from 'react';
-import './homepage.styles.scss'
+
 import { Container } from 'react-bootstrap'
 import Directory from '../../components/directory/directory.component'
 
+import './homepage.styles.scss'
+
 const HomePage = () => {
   return (
-    <div>
+    <section>
       <Container fluid>
         <Directory />
       </Container>
-    </div>
+    </section>
   )
 }
 

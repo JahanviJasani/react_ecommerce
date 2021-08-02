@@ -1,0 +1,42 @@
+.collection_preview {
+  padding: 100px 0;
+  .collection_title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #dadada;
+    .collection_title {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+  .item_preview {
+    display: block;
+    .item_img {
+      margin-bottom: 25px;
+      transition: all 200ms;
+    }
+    .item_description {
+      .item_brand {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+      }
+      .item_name {
+        font-size: 0.9375rem;
+        letter-spacing: 0.3px;
+        color: #757985;
+        margin-bottom: 12px;
+      }
+      .item_price {
+        font-weight: 600;
+      }
+    }
+  }
+  &:nth-child(even) {
+    background: #faf6f6;
+  }
+}

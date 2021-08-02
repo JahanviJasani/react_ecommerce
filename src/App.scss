@@ -1,13 +1,16 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  color: #232323;
 }
 
 a {
   text-decoration: none;
+  color: #232323;
   &:hover {
     text-decoration: none;
+    color: #232323;
   }
 }
 
@@ -15,7 +18,12 @@ a {
   padding: 0 30px;
 }
 
-.theme_btn {
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn_theme {
   padding: 0 2px 4px;
   font-size: 0.75rem;
   font-weight: 500;
@@ -26,6 +34,21 @@ a {
   transition: all 0.5s;
   &:hover {
     color: #000;
-    border-color: #000;
+    border-color: #232323;
   }
+}
+
+.btn_main {
+  padding: 11px 32px;
+  border: 1px solid #dadada;
+  transition: all 0.5s;
+  &:hover {
+    background: #232323;
+    border-color: #232323;
+    color: #fff;
+  }
+}
+
+.section {
+  padding: 80px 0;
 }

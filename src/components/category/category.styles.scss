@@ -2,15 +2,13 @@
   min-height: 300px;
   position: relative;
   overflow: hidden;
-
   .category_img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: top center;
-    transition: all 1s;
+    transition: all 2s;
   }
-
   .category_content {
     position: absolute;
     top: 55px;
@@ -33,11 +31,10 @@
       color: #fff;
     }
   }
-
   &:hover {
     .category_img {
       transform: scale(1.1);
-      transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
   }
 }
