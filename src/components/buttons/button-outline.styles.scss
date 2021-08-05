@@ -1,11 +1,12 @@
 .btn_outline {
+  font-size: 0.9375rem;
   display: inline-block;
-  padding: 12px 32px;
-  border: 1px solid #dadada;
+  padding: 14px 32px;
+  border: 1px solid rgba(8, 38, 42, 0.2);
   transition: all 0.4s;
   &:hover {
-    background: #BFA893;
-    border-color: #BFA893;
+    background: #141F26;
+    border-color: #141F26;
     color: #fff;
   }
 }

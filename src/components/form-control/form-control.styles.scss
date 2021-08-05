@@ -1,0 +1,22 @@
+.form-group {
+  margin-bottom: 0 !important;
+  label {
+    font-size: 0.9375rem;
+    font-weight: 400;
+  }
+  .form-control {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 52px;
+    color: #141F26;
+    height: 52px;
+    padding: 16px 18px;
+    border-color: rgba(8, 38, 42, 0.2);
+    background: transparent;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

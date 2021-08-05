@@ -11,6 +11,7 @@ const HomePage = () => {
         imageUrl='https://i.postimg.cc/T2jnbWwN/home-banner.jpg' 
         title='Designer Collection' 
         description= 'Shop the latest clothing and handbags from top fashion brands.'
+        button='Shop Now'
       />
       <section>
         <Container fluid>

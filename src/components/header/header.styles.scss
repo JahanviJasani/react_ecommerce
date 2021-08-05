@@ -1,6 +1,9 @@
 .header {
-  padding: 30px 0;
+  position: relative;
+  height: 85px;
   z-index: 999;
+  display: flex;
+  align-items: center;
   .logo_container {
     .logo {
       font-size: 1.0625rem;
@@ -8,24 +11,46 @@
       color: #141F26;
     }
   }
-  .nav_menu {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    .nav_link {
-      position: relative;
-      padding-bottom: 2px;
+  .header_menu {
+    .menu_link {
       margin: 0 20px;
       font-weight: 500;
-      &:hover {
+      .link_text {
+        position: relative;
         &:before {
           content: '';
           position: absolute;
+          bottom: -5px;
           left: 0;
-          bottom: 0;
           width: 100%;
           height: 1px;
+          transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+          transform: scale3d(0, 1, 1);
           background: #141F26;
+        }
+      }
+      &:hover {
+        .link_text {
+          &:before {
+            transform: scale3d(1, 1, 1);
+            transform-origin: 0 50%;
+          }
+        }
+      }
+    }
+  }
+  .header_account {
+    .separator {
+      font-size: 0.8125rem;
+      padding: 0 12px;
+    }
+    .account_link {
+      .link_text {
+        font-size: 0.8125rem;
+      }
+      &:hover {
+        .link_text {
+          color: #A68A7B;
         }
       }
     }
