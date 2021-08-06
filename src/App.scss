@@ -61,6 +61,14 @@ p {
   font-weight: 600;
 }
 
+.small {
+  font-size: 0.8125rem;
+}
+
+.decoration {
+  text-decoration: underline;
+}
+
 .light_bg {
   background: $light_bg;
 }
@@ -110,6 +118,12 @@ img {
 }
 
 .wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.w_512 {
   max-width: 512px;
 }
 
@@ -121,15 +135,4 @@ img {
   grid-row-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-}
-
-.grid_02 {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-}
-
-.checkbox_custom {
-  
 }
