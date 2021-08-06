@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SectionHeader from '../section-header/section-header.component';
 import Category from '../category/category.component';
 
 import './directory.styles.scss';
@@ -41,13 +42,20 @@ class Directory extends React.Component {
 
   render() {
     return (
-      <div className="category_grid">
-        {
-        this.state.wsections.map( ({title, subtitle, imageUrl, pos, id}) => (
-          <Category id={id} title={title} subtitle={subtitle} position={pos} imageUrl={imageUrl} />
-        ))
-        } 
-      </div>
+      <section className="section">
+        <SectionHeader
+          subtitle="Discover"
+        >
+          <h2 className="title">Collections</h2>
+        </SectionHeader>
+        <div className="category_grid">
+          {
+          this.state.wsections.map( ({title, subtitle, imageUrl, pos, id}) => (
+            <Category id={id} title={title} subtitle={subtitle} position={pos} imageUrl={imageUrl} />
+          ))
+          } 
+        </div>
+      </section>
     )
   }
 }

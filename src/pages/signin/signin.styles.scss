@@ -7,23 +7,3 @@
   background: url("https://i.postimg.cc/HWFr3YHh/account-banner.jpg") no-repeat;
   background-size: cover;
 }
-
-.divider_wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  .divider_line {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(8, 38, 42, 0.1);
-  }
-  .divider_text {
-    position: relative;
-    padding-right: 24px;
-    padding-left: 24px;
-    background-color: #f2efed;
-  }
-}

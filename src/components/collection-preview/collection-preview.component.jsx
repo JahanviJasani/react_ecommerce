@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ButtonOutline from '../buttons/button-outline.component'
+import ButtonTheme from '../buttons/button-theme.component'
 import CollectionItem from '../collection-item/collection-item.component';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -12,9 +12,10 @@ const CollectionPreview = ({ id, title, items }) => {
       <Container fluid>
         <div className="collection_title_block">
           <h1 className="collection_title font_500">{title}</h1>
-          <ButtonOutline 
-            link=''
+          <ButtonTheme 
+            link='/shop'
             text='View All'
+            className="btn_outline"
           />
         </div>
         <Row>

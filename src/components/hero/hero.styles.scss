@@ -4,16 +4,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 80px;
   .hero_container {
     display: flex;
     align-items: center;
     .hero_content {
       padding-left: 120px;
-      width: 480px;
-      .title {
-        font-size: 3.75rem;
-      }
+      width: 520px;
       .description {
         color: #2b353c;
         margin-bottom: 4rem;

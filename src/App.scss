@@ -13,22 +13,28 @@ $font_1: 'Marcellus',serif;
 
 body {
   font-family: $font_0;
+  font-size: 0.9375rem;
   font-weight: 500;
   color: $darker_font;
 }
 
-a {
+a, button {
   font-size: 0.9375rem;
   text-decoration: none;
   color: $darker_font;
+  outline: none;
+  background: transparent;
   &:hover {
     text-decoration: none;
     color: $darker_font;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .container-fluid {
-  padding: 0 50px;
+  padding: 0 80px;
 }
 
 /* Typography */
@@ -61,12 +67,29 @@ p {
   font-weight: 600;
 }
 
+.dark_font {
+  color: $dark_font;
+}
+
+.theme_font {
+  color: $theme_color;
+}
+
 .small {
   font-size: 0.8125rem;
 }
 
+.hover_theme{
+  &:hover {
+    color: $theme_color;
+  }
+}
+
 .decoration {
   text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .light_bg {
@@ -97,26 +120,6 @@ img {
   padding: 80px 0;
 }
 
-.section_group {
-  .section_title {
-    font-family: $font_1;
-    font-size: 3rem;
-    color: $darker_font;
-    margin-bottom: 70px;
-  }
-  &.group_01 {
-    margin-bottom: 60px;
-    .section_title {
-      margin-bottom: 15px;
-    }
-  }  
-  .section_desc {
-    font-size: 1rem;
-    font-weight: 400;
-    color: $light_font;
-  }
-}
-
 .wrapper {
   min-height: 100vh;
   display: flex;
@@ -135,4 +138,25 @@ img {
   grid-row-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
+}
+
+.divider_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .divider_line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(8, 38, 42, 0.1);
+  }
+  .divider_text {
+    position: relative;
+    color: $light_font;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: #f2efed;
+  }
 }

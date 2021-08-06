@@ -1,0 +1,22 @@
+.section_header {
+  .title {
+    font-family: 'Marcellus',serif;
+    font-size: 3rem;
+    color: #141F26;
+    margin-bottom: 70px;
+    &.hero_title {
+      font-size: 3.5rem;
+      margin-bottom: 25px;
+    }
+  }
+  .subtitle {
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  } 
+  .section_desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+  }
+}

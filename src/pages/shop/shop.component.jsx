@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Hero from '../../components/hero/hero.component';
+import SectionHeader from '../../components/section-header/section-header.component';
 import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 
 import './shop.styles.scss';
@@ -24,9 +25,14 @@ class ShopPage extends React.Component {
       <div>
         <Hero 
           imageUrl='https://i.postimg.cc/tCGQSJhx/shop-banner.jpg' 
-          title='Get Your Fashion Style' 
-          description= 'Shop the latest clothing, shoes, and handbags from top fashion brands, style icons, and celebrities.'
-        />
+          button="Shop Now"
+        >
+          <SectionHeader
+            description= 'Shop the latest clothing and handbags from top fashion brands.'
+          >
+            <h2 className="title hero_title">Get Your Fashion Style</h2>
+          </SectionHeader>
+        </Hero>
         <section className="section pt-0">
           {
             this.state.collection.map( ({id, ...otherCollectionProps}) => (

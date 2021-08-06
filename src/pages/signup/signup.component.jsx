@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import FormControl from '../../components/form-control/form-control.component';
-import ButtonSolid from '../../components/buttons/button-solid.component';
+import ButtonTheme from '../../components/buttons/button-theme.component';
 
 import './signup.styles.scss';
 
@@ -30,12 +30,12 @@ class SignUp extends React.Component {
                 type="password"
                 label="Confirm Password"
               />
-              <ButtonSolid 
+              <span className="small">By creating an account, I agree to the <Link className="small font_600 decoration hover_theme">Privacy Policy</Link> and <Link className="small font_600 decoration">Terms & Conditions.</Link></span>
+              <ButtonTheme 
                 text="Sign Up"
-                class="d-flex justify-content-center mt-1 w-100"
+                className="btn_solid d-flex justify-content-center w-100"
               />
-              <span className="small">By creating an account, you agree to our <Link className="small font_600 decoration">Privacy Policy</Link> and <Link className="small font_600 decoration">Terms & Conditions.</Link>
-              </span>
+              <span className="small font_500">Already have an account? <Link className="small font_600 decoration hover_theme" to="/signin">Click here to sign in</Link></span>
             </Form>
           </div>
         </Container>

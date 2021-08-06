@@ -4,11 +4,11 @@ import { Form } from 'react-bootstrap';
 
 import './form-control.styles.scss';
 
-const FormControl = ({type, ...otherInputProps}) => {
+const FormControl = ({label, handleChange, ...otherInputProps}) => {
   return (
     <Form.Group>
-      <Form.Label>{otherInputProps.label}</Form.Label>
-      <Form.Control type={type} />
+      <Form.Label>{label}</Form.Label>
+      <Form.Control onChange={handleChange} {...otherInputProps} />
     </Form.Group>
   )
 }
