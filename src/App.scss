@@ -37,6 +37,11 @@ a, button {
   padding: 0 80px;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -92,28 +97,21 @@ p {
   }
 }
 
-.light_bg {
-  background: $light_bg;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
 .btn_theme {
   padding: 0 2px 4px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: 1.8px;
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: 1px solid #fff;
+  color: $theme_color;
+  border-bottom: 1px solid $theme_color;
   transition: all 0.5s;
   &:hover {
-    color: #141F26;
-    border-color: $darker_font;
+    color: $dark_font;
+    border-color: $dark_font;
   }
+}
+
+.light_bg {
+  background: $light_bg;
 }
 
 .section {
