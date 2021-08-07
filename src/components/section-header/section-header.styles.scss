@@ -1,4 +1,10 @@
 .section_header {
+  &.group_01 {
+    margin-bottom: 60px;
+    .title {
+      margin-bottom: 15px;
+    }
+  }
   .title {
     font-family: 'Marcellus',serif;
     font-size: 3.5rem;
@@ -6,6 +12,9 @@
     margin-bottom: 70px;
     &.hero_title {
       margin-bottom: 25px;
+    }
+    &.small_title {
+      font-size: 2.875rem;
     }
   }
   .subtitle {
