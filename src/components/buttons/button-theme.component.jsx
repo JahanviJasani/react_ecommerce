@@ -20,7 +20,7 @@ const ButtonTheme = ({ link, text, ...otherButtonProps }) => {
         :
         (
           <button 
-            className={`btn_solid ${otherButtonProps.class}`}
+            className={`btn_solid ${otherButtonProps.className}`}
             {...otherButtonProps}
           >
             {text}

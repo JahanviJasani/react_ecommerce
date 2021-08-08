@@ -6,6 +6,8 @@ import SectionHeader from '../../components/section-header/section-header.compon
 import FormControl from '../../components/form-control/form-control.component';
 import ButtonTheme from '../../components/buttons/button-theme.component';
 
+import { signInWithGoogle } from '../../firebase/firebase.utils';
+
 import './signin.styles.scss';
 
 class SignIn extends React.Component {
@@ -62,13 +64,14 @@ class SignIn extends React.Component {
                 type="submit"
                 className="btn_solid d-flex justify-content-center mt-1 w-100"
               />
-              <div class="divider_wrapper">
-                <div class="divider_line"></div>
-                <div class="divider_text small font_600">OR</div>
+              <div className="divider_wrapper">
+                <div className="divider_line"></div>
+                <div className="divider_text small font_600">OR</div>
               </div>
               <ButtonTheme 
                 text="Sign in with Google"
                 className="btn_outline d-flex justify-content-center w-100"
+                onClick={signInWithGoogle}
               />
               <span className="small font_500">New to GRAPPLE? <Link className="small font_600 decoration" to="/signup">Click here to sign up</Link></span>
             </Form>

@@ -32,7 +32,7 @@ const Header = () => {
             </div>
           </Col>
           <Col lg={3}>
-            <div class="header_account d-none d-lg-inline-block">
+            <div className="header_account d-none d-lg-inline-block">
               <Link to="/signin" className="account_link">
                 <span className="link_text">Sign In</span>
               </Link>
